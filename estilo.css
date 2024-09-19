@@ -1,0 +1,55 @@
+body {
+    background: blue;
+    text-align: center;
+    font-family: Arial, sans-serif; /* Corrigido o valor da font-family */
+    font-size: 15pt; /* Corrigido a unidade para pt */
+    margin: 0; /* Adicionado para remover margens padrão */
+    padding: 0; /* Adicionado para remover preenchimentos padrão */
+}
+
+section {
+    background: rgb(250, 245, 245);
+    width: 90%; /* Ajustado para ser responsivo */
+    max-width: 500px; /* Limita a largura máxima */
+    height: auto; /* Ajustado para altura automática */
+    border-radius: 15px;
+    margin: auto;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3); /* Adicionada opacidade ao box-shadow */
+    padding: 10px;
+}
+
+footer {
+    font-style: italic;
+}
+
+img {
+    width: 100%; /* Ajustado para ser responsivo */
+    max-width: 200px; /* Limita a largura máxima */
+    height: auto; /* Ajustado para altura automática */
+}
+
+/* Media Queries para dispositivos menores */
+@media (max-width: 768px) {
+    section {
+        width: 95%; /* Ajusta a largura em telas menores */
+    }
+
+    img {
+        max-width: 150px; /* Reduz o tamanho da imagem em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 12pt; /* Ajusta o tamanho da fonte em telas muito pequenas */
+    }
+
+    section {
+        width: 100%; /* Ajusta a largura para tela cheia em dispositivos muito pequenos */
+        padding: 5px; /* Ajusta o padding em telas menores */
+    }
+
+    img {
+        max-width: 100px; /* Reduz ainda mais o tamanho da imagem */
+    }
+}
